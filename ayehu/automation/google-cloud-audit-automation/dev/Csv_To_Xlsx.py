@@ -4,7 +4,7 @@ import csv
 import os
 from glob import glob
 from xlsxwriter.workbook import Workbook
-for csvfile in glob('./*.csv'):
+for csvfile in glob('/tmp/workspace/bera/ayehu/automation/google-cloud-audit-automation/dev/*.csv'):
     name = os.path.basename(csvfile).split('.')[-2]
     print name
     print csvfile
