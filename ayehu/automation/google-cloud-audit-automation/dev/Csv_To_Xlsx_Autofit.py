@@ -32,7 +32,7 @@ def Excel_autofit():
                 max_length = len(cell.value)
             except:
               pass
-          adjusted_width = max_length * 1
+          adjusted_width = max_length 
           worksheet.column_dimensions[column].width = adjusted_width
         wb.save(file)
 
